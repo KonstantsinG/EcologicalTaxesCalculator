@@ -1,0 +1,6 @@
+E:\LabRabs\BackingFactory\EcologyLawsCalculator\CalculatorTools\bin\Debug\CalculatorTools.dll
+E:\LabRabs\BackingFactory\EcologyLawsCalculator\CalculatorTools\bin\Debug\CalculatorTools.pdb
+E:\LabRabs\BackingFactory\EcologyLawsCalculator\CalculatorTools\obj\Debug\CalculatorTools.csproj.AssemblyReference.cache
+E:\LabRabs\BackingFactory\EcologyLawsCalculator\CalculatorTools\obj\Debug\CalculatorTools.csproj.CoreCompileInputs.cache
+E:\LabRabs\BackingFactory\EcologyLawsCalculator\CalculatorTools\obj\Debug\CalculatorTools.dll
+E:\LabRabs\BackingFactory\EcologyLawsCalculator\CalculatorTools\obj\Debug\CalculatorTools.pdb
