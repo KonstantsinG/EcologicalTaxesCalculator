@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="UI.Views.NewReportView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Views"
+             mc:Ignorable="d" 
+             Height="250" Width="450">
+    
+    <Grid Margin="10">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <Rectangle Fill="#FFDDE5F1" Margin="-1" Grid.RowSpan="5"
+           RadiusX="20" RadiusY="20"/>
+
+        <Rectangle Fill="#FF93A9CA"  Grid.RowSpan="5"
+           RadiusX="20" RadiusY="20"/>
+
+        <TextBlock Grid.Row="0" Text="Выберите тип отчёта"
+                   FontWeight="Light" FontSize="25"
+                   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <Border Background="#FFD1D1D1" Height="2"
+                VerticalAlignment="Bottom" Margin="0,0,0,10"/>
+
+        <Button Grid.Row="1" Content="Отчёт за месяц" Width="300"
+                FontSize="20" FontWeight="Light" Height="40" x:Name="monthButton"/>
+
+        <Button Grid.Row="2" Content="Отчёт за квартал" Width="300"
+                FontSize="20" FontWeight="Light" Height="40" x:Name="quarterButton"/>
+
+        <Button Grid.Row="3" Content="Отчёт за год" Width="300"
+                FontSize="20" FontWeight="Light" Height="40" x:Name="yearButton"/>
+
+    </Grid>
+    
+</UserControl>

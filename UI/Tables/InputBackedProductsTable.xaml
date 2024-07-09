@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="UI.Tables.InputBackedProductsTable"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Tables"
+             mc:Ignorable="d" 
+             d:DesignHeight="900" d:DesignWidth="1600">
+
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+
+                <Table BorderBrush="Black"
+                   BorderThickness="1,0,0,1"
+                   CellSpacing="0">
+
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+
+                    <TableRowGroup>
+
+                        <TableRow>
+
+                            <TableCell ColumnSpan="2" BorderBrush="Black" BorderThickness="0,1,1,0"
+                                   Padding="10" Background="#FFCCCCCC">
+                                <BlockUIContainer>
+
+                                    <TextBlock Text="Производство хлебобулочных изделий"
+                                           FontSize="25" FontWeight="Bold"
+                                           HorizontalAlignment="Center"/>
+
+                                </BlockUIContainer>
+                            </TableCell>
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TableCell BorderBrush="Black"
+                                   BorderThickness="0,1,1,0"
+                                   Padding="5">
+                                <BlockUIContainer>
+
+                                    <TextBlock Text="Наименование"
+                                           FontWeight="Bold" FontSize="20"
+                                           HorizontalAlignment="Center"/>
+
+                                </BlockUIContainer>
+                            </TableCell>
+
+                            <TableCell BorderBrush="Black"
+                                   BorderThickness="0,1,1,0"
+                                   Padding="5">
+                                <BlockUIContainer>
+
+                                    <TextBlock Text="Количество тонн"
+                                           FontWeight="Bold" FontSize="20"
+                                           HorizontalAlignment="Center"/>
+
+                                </BlockUIContainer>
+                            </TableCell>
+
+                        </TableRow>
+
+                    </TableRowGroup>
+
+                    <TableRowGroup x:Name="instancesContainer">
+
+                    </TableRowGroup>
+
+                </Table>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+        <Grid Grid.Row="1">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button Margin="30,10"
+                Grid.Column="0"
+                Content="Назад"
+                FontWeight="Light"
+                FontSize="25"
+                    Click="OnBackButtonClick"/>
+
+            <Button Margin="30,10"
+                Grid.Column="1"
+                Content="Сохранить"
+                FontWeight="Light"
+                FontSize="25"
+                    Click="OnSaveButtonClick"/>
+
+        </Grid>
+
+    </Grid>
+
+</UserControl>

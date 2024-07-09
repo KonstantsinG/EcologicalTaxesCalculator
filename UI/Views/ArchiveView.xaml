@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="UI.Views.ArchiveView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Views"
+             xmlns:cont="clr-namespace:UI.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1000">
+    
+    <Grid>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="250" MinWidth="250"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0" Margin="5">
+
+                <Rectangle Fill="#FFDDE5F1" Margin="-1" Grid.RowSpan="2"
+                   RadiusX="20" RadiusY="20"/>
+
+                <Rectangle Fill="#FF8EA8CE"  Grid.RowSpan="2"
+                   RadiusX="20" RadiusY="20"/>
+
+                <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                    <StackPanel Margin="15, 25, 0, 0" x:Name="foldersContainer">
+
+
+
+                    </StackPanel>
+                </ScrollViewer>
+
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="10,5,5,5">
+
+                <Rectangle Fill="#FFC9D3E1" Margin="-5,0,0,0"
+                   RadiusX="20" RadiusY="20"/>
+
+                <StackPanel Margin="10">
+
+                    <TextBlock Text="Хлебобулочные изделия" x:Name="backProdBlock"
+                               FontSize="17" FontWeight="Light" Margin="0,5"
+                               MouseDown="OnBackProdBlockMouseDown"/>
+
+                    <TextBlock Text="Печи хлебопекарные" x:Name="prodEquFurns" Margin="0,5"
+                               FontSize="17" FontWeight="Light"
+                               MouseDown="OnProdEquFurnsMouseDown"/>
+
+                    <TextBlock Text="Котлы паровые" x:Name="prodEquSteamBoils" Margin="0,5"
+                               FontSize="17" FontWeight="Light"
+                               MouseDown="OnProdEquSteamBoilsMouseDown"/>
+
+                    <TextBlock Text="Котлы водонагревательные" x:Name="prodEquHotWaterBoils" Margin="0,5"
+                               FontSize="17" FontWeight="Light"
+                               MouseDown="OnProdEquHotWaterBoilsMouseDown"/>
+
+                    <TextBlock Text="Экологический налог" x:Name="ecologicalTax" Margin="0,5"
+                               FontSize="17" FontWeight="Light"
+                               MouseDown="OnEcologicalTaxMouseDown"/>
+
+                </StackPanel>
+
+            </Grid>
+
+        </Grid>
+
+    </Grid>
+    
+</UserControl>

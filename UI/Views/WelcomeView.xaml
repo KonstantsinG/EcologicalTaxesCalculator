@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="UI.Views.WelcomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Views"
+             mc:Ignorable="d" 
+             Width="Auto" Height="Auto"
+             d:DesignHeight="1000" d:DesignWidth="1500">
+    
+    <Grid>
+
+        <StackPanel>
+
+            <TextBlock Text="Добро пожаловать!"
+                       Foreground="White"
+                       FontSize="70" FontWeight="Normal"
+                       Margin="30,40"/>
+
+            <TextBlock Text="Сегодня отличный день."
+                       Foreground="White"
+                       FontSize="30" FontWeight="Light"
+                       Margin="30,10" x:Name="dayTextBlock"/>
+
+            <Image Source="/Images/heart.png" HorizontalAlignment="Right"
+                   Width="30" Height="30" Margin="0,-440,1,0"
+                   MouseWheel="OnImageMouseWheel"/>
+
+        </StackPanel>
+        
+    </Grid>
+    
+</UserControl>

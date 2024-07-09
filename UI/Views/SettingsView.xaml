@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="UI.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:UI.Views"
+             mc:Ignorable="d" 
+             Width="Auto" Height="Auto"
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+
+            <Rectangle RadiusX="20" RadiusY="20"
+                       Fill="#FFDDE2F1" Margin="-1"/>
+
+            <Rectangle RadiusX="20" RadiusY="20"
+                       Fill="#FF93A9CA"/>
+
+            <StackPanel Margin="5,15">
+
+                <TextBlock Text="Выберите пункт" Margin="5,5,0,0"
+                           FontSize="18" FontWeight="Regular"
+                           HorizontalAlignment="Center"
+                           MouseDown="OnBackedProductsMouseDown"/>
+
+                <Border Height="1" Background="#FF2A3145"
+                        Margin="-5,10"/>
+
+                <TextBlock Text="Хлебобулочные изделия" Margin="5,5,0,0"
+                           FontSize="18" FontWeight="Light"
+                           HorizontalAlignment="Left" x:Name="backedProductsTB"
+                           MouseDown="OnBackedProductsMouseDown"/>
+
+                <TextBlock Text="Печи" Margin="5,5,0,0" x:Name="furnacesTB"
+                           FontSize="18" FontWeight="Light"
+                           HorizontalAlignment="Left"
+                           MouseDown="OnFurnacesMouseDown"/>
+
+                <TextBlock Text="Котлы паровые" Margin="5,5,0,0" x:Name="steamBoilersTB"
+                           FontSize="18" FontWeight="Light"
+                           HorizontalAlignment="Left"
+                           MouseDown="OnSteamBoilersMouseDown"/>
+
+                <TextBlock Text="Котлы водонагревательные" Margin="5,5,0,0"
+                           FontSize="18" FontWeight="Light" x:Name="waterBoilersTB"
+                           HorizontalAlignment="Left"
+                           MouseDown="OnHotWaterBoilersMouseDown"/>
+
+            </StackPanel>
+
+        </Grid>
+
+        <ContentPresenter Margin="5" x:Name="settingsTablesRenderer"
+                          Grid.Column="1"/>
+
+    </Grid>
+
+</UserControl>
