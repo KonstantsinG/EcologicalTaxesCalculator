@@ -29,8 +29,8 @@ All information is stored in `.xml` files. You can edit them yourself by followi
 ## Application verification
 Pre-calculated reports were used to check the calculation results. All evidence is shown below.
 
->Actual report
+### Actual report
 ![Actual report](actTax.png)
 
->Report calculated by the program
+### Report calculated by the program
 ![Report calculated by the program](calcTax.png)
