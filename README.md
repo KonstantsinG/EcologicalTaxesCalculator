@@ -8,7 +8,7 @@ To install, go to [this path](ApplicationSetup/Debug/) and:
 3. Select `Save as...`
 4. Repeat this with `setup.exe` file
 
-This two file must be in the same folder. After installing, run `setup.exe`, *turnn off windows defender if this necessary* and follow the installation wisard instructions.
+This two file must be in the same folder. After installing, run `setup.exe` and follow the installation wizard instructions.
 Done!
 
 
